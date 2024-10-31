@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varta:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100%;
+
+    background: #826afb;
+}
+
+form {
+    border-radius: 8px;
+    margin: 25px;
+    padding: 25px;
+
+    max-width: 500px;
+    width: 100%;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: #333;
+}
+
+form h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+form .input-box {
+    margin-top: 20px;
+}
+
+.input-box .field {
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    margin-top: 8px;
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    height: 50px;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+    color: #333;
+    background: transparent;
+}
+
+.input-box .field.fieldMsg {
+    height: 200px;
+    resize: none;
+}
+
+form .button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+.button-box button {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+form #rstBtn {
+    border: 0px solid black;
+    border-radius: 6px;
+
+    width: 100%;
+    height: 55px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #000000;
+    background: #ffffff;
+}
+
+form #smtBtn {
+    border: none;
+    border-radius: 6px;
+
+    width: 100%;
+    height: 55px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    background: #826afb;
+}
+
+form #rstBtn:hover {
+    cursor: pointer;
+
+    background: #fafafa;
+}
+
+form #smtBtn:hover {
+    cursor: pointer;
+
+    background: #6a4ef6;
+}
+
+@media screen and (max-width: 425px) {
+
+    form {
+        margin: 10px;
+    }
+
+    form #rstBtn {
+        height: 50px;
+    }
+
+    form #smtBtn {
+        height: 50px;
+    }
+
+}
